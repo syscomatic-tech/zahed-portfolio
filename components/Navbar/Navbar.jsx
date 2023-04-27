@@ -25,13 +25,13 @@ const Navbar = () => {
                     </div>
                     <div className='flex justify-center'>
                         <div className={`shadow-lg md:shadow-none bg-white rounded-b-2xl border-b-2 md:border-0 border-b-primary absolute py-5 md:static duration-300 flex left-0 w-full justify-center z-[999] ${open ? 'top-0' : 'top-[-340px]'}`}>
-                            <nav className={`flex md:flex-row flex-col items-center gap-5 md:gap-7 mt-5 md:mt-0`}>
+                            <div className={`flex md:flex-row flex-col items-center gap-5 md:gap-7 mt-5 md:mt-0`}>
                                 {
                                     navItems.map(item =>
-                                        <Link href={item.link} className='text-textColor hover:text-primary duration-300'>{item.title}</Link>
+                                        <Link href={item.link} key={item.title} className='text-textColor hover:text-primary duration-300'>{item.title}</Link>
                                     )
                                 }
-                            </nav>
+                            </div>
                         </div>
                     </div>
                 </div>

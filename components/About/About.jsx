@@ -11,11 +11,11 @@ const About = () => {
     ]
     return (
         <div>
-            <h2 className='text-center text-3xl font-bold'>About</h2>
+            <h2 className='text-center sectionHeader font-bold'>About Me</h2>
             <p className='text-center text-textColor mt-2'>My introduction</p>
             <div className='flex gap-7 md:gap-10 lg:gap-20 mt-20 justify-start items-center flex-col md:flex-row'>
                 <div>
-                    <Image width={500} height={400} src={AboutImg} />
+                    <Image width={500} height={400} src={AboutImg} alt=''/>
                 </div>
                 <div>
                     <div className='max-w-[500px]'>
@@ -24,8 +24,8 @@ const About = () => {
                     </div>
                     <div className='flex flex-wrap gap-8 mt-10'>
                         {
-                            aboutMe.map(item =>
-                                <div className='flex flex-col items-center text-center w-min'>
+                            aboutMe.map((item, index) =>
+                                <div key={index} className='flex flex-col items-center text-center w-min'>
                                     <h5 className='text-2xl font-bold'>{item[0]}</h5>
                                     <p className='text-textColor'>{item[1]}</p>
                                 </div>

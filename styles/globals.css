@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
 @layer components {
   .container{
     @apply max-w-[1440px] mx-auto px-5 md:px-8 lg:px-12
+  }
+  .sectionHeader {
+    @apply text-3xl text-black font-bold
   }
 }
