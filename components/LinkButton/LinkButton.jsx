@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import React from 'react'
-import { HiArrowRight } from 'react-icons/hi';
 
 const typeBasedClasses = (type) => {
     switch (type) {
@@ -15,13 +14,13 @@ const typeBasedClasses = (type) => {
             break;
     }
 }
-
-const Button = ({ type, className, children, onClick }) => {
+const LinkButton = ({ type, className, children, href}) => {
+    
     return (
-        <button onClick={onClick} className={`${typeBasedClasses(type)} ${className}`}>
-            {children}<HiArrowRight/>
-        </button>
+        <Link href={href} className={`${typeBasedClasses(type)} ${className} w-max`}>
+            {children}
+        </Link>
     )
 }
 
-export default Button
+export default LinkButton

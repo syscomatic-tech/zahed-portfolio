@@ -81,7 +81,7 @@ const Qualification = () => {
                                     </div>
                                     <div className='relative'>
                                         <div className={`flex flex-col gap-1.5 pb-5 pl-3 `}>
-                                            <h5 className='text-xl font-medium leading-5'>{item.title}</h5>
+                                            <h5 className='text-xl font-medium leading-5 text-black'>{item.title}</h5>
                                             <p className='text-sm text-textColor'>{item.institute}</p>
                                             <p className='text-sm text-textColor flex gap-1'><CgCalendarDates size={17} />{item.start}-{item.finished}</p>
                                         </div>
@@ -102,14 +102,14 @@ const Qualification = () => {
                                         <div className='flex flex-col items-center '>
                                             <div className='w-4 h-4 hover:scale-150 duration-300 rounded-full bg-primary' />
                                             {
-                                                item.id !== workItems.length && <div className='h-[100px] w-0.5 bg-primary' />
+                                                item.id !== workItems.length && <div className='h-[100px] w-[0.1rem] bg-primary' />
                                             }
                                         </div>
 
                                     </div>
                                     <div className='relative'>
                                         <div className={`flex flex-col gap-1.5 pb-5 pl-3`}>
-                                            <h5 className='text-xl font-medium leading-5'>{item.title}</h5>
+                                            <h5 className='text-xl font-medium leading-5 text-black'>{item.title}</h5>
                                             <p className='text-sm text-textColor'>{item.institute}</p>
                                             <p className='text-sm text-textColor flex gap-1'><CgCalendarDates size={17} />{item.start}-{item.finished}</p>
                                         </div>

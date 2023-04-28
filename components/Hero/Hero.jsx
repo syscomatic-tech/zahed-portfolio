@@ -2,21 +2,23 @@ import React from 'react'
 import Sidebar from './Sidebar/Sidebar'
 import Button from '../Button/Button.jsx'
 import Image from 'next/image'
+import { HiArrowRight } from 'react-icons/hi';
+import LinkButton from '../LinkButton/LinkButton';
 
 const Hero = () => {
     return (
-        <div className='relative'>
+        <div className='relative mt-48'>
             <Sidebar />
             <div>
                 <div className='ml-20'>
-                    <h1 className='text-4xl font-bold'>Hi, I'am Zahed Hasan</h1>
+                    <h1 className='text-4xl font-bold text-textColor'>Hi, I'am Zahed Hasan</h1>
                     <p className='text-primary mt-3'>Backend developer</p>
                     <br />
                     <p className='text-textColor max-w-[500px]'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident recusandae placeat incidunt animi eius, atque perspiciatis. Non, officiis nostrum.
                     </p>
                     <div className='mt-5'>
-                        <Button type={'primary'} className={''}>Contact Me</Button>
+                        <LinkButton href='/#contact' type={'primary'} className={''}>Contact Me<HiArrowRight/></LinkButton>
                     </div>
                 </div>
                 {/* <div>

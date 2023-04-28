@@ -10,7 +10,7 @@ const About = () => {
         ['5+', 'Companies worked'],
     ]
     return (
-        <div>
+        <div id='about'>
             <h2 className='text-center sectionHeader font-bold'>About Me</h2>
             <p className='text-center text-textColor mt-2'>My introduction</p>
             <div className='flex gap-7 md:gap-10 lg:gap-20 mt-20 justify-start items-center flex-col md:flex-row'>
@@ -26,7 +26,7 @@ const About = () => {
                         {
                             aboutMe.map((item, index) =>
                                 <div key={index} className='flex flex-col items-center text-center w-min'>
-                                    <h5 className='text-2xl font-bold'>{item[0]}</h5>
+                                    <h5 className='text-2xl font-bold text-primary'>{item[0]}</h5>
                                     <p className='text-textColor'>{item[1]}</p>
                                 </div>
 
